@@ -1,0 +1,77 @@
+@font-face{
+	font-family: 'Ubuntu Light';
+	src: url("../fonts/Ubuntu-L.ttf");
+}
+
+@font-face{
+	font-family: 'Ubuntu';
+	src: url("../fonts/Ubuntu-R.ttf");
+}
+
+*{
+	font-family: "Ubuntu";
+	font-weight: lighter;
+	text-shadow: none;
+}
+
+body, input, select, textarea, button, .ui-btn {
+	font-family: "Ubuntu";
+}
+
+.ui-page-theme-b{
+	background-color: rgb(177,34,40);
+}
+
+.ui-btn.ui-corner-all.menu{
+	border-radius: 20px;
+	margin: 20px 30px;
+	font-size: 1.3em;
+	color: rgb(253,217,140);
+}
+
+.ui-page-theme-b .ui-btn:focus{
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+	background-image: linear-gradient(left,rgb(216,162,83),rgb(253,217,140));
+	background-image: -webkit-linear-gradient(left,rgb(216,162,83),rgb(253,217,140));
+	background-image: -moz-linear-gradient(left,rgb(216,162,83),rgb(253,217,140));
+	color: black;
+	border-color: transparent;
+}
+
+.ui-page-theme-b .ui-btn:active{
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+	background-image: linear-gradient(left,rgb(216,162,83),rgb(253,217,140));
+	background-image: -webkit-linear-gradient(left,rgb(216,162,83),rgb(253,217,140));
+	background-image: -moz-linear-gradient(left,rgb(216,162,83),rgb(253,217,140));
+	color: black;
+	border-color: transparent;
+}
+
+.ui-page-theme-b .ui-btn:visited{
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+	background-image: linear-gradient(left,rgb(216,162,83),rgb(253,217,140));
+	background-image: -webkit-linear-gradient(left,rgb(216,162,83),rgb(253,217,140));
+	background-image: -moz-linear-gradient(left,rgb(216,162,83),rgb(253,217,140));
+	border-color: transparent;
+}
+
+.barra-blanca{
+	color: white;
+	margin: 20px 40px;
+}
+
+.ui-btn-icon-notext.ui-btn-left {
+    top: 1em;
+    left: 1em;
+}
+
+.ui-btn-right {
+    top: .5em;
+    right: .5em;
+}
