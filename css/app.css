@@ -1,21 +1,24 @@
-@font-face{
-	font-family: 'Ubuntu Light';
-	src: url("../fonts/Ubuntu-L.ttf");
+@font-face {
+	font-family: 'Aspira';
+	font-style: normal;
+	font-weight: 700;
+	src: url(../fonts/AspiraXWide-Regular.woff2) format('woff2');
 }
 
-@font-face{
-	font-family: 'Ubuntu';
-	src: url("../fonts/Ubuntu-R.ttf");
+@font-face {
+	font-family: 'Aspira Bold';
+	font-style: normal;
+	font-weight: 700;
+	src: url(../fonts/AspiraXWide-Bold.woff) format('woff2');
 }
 
 *{
-	font-family: "Ubuntu";
-	font-weight: lighter;
-	text-shadow: none;
+	font-family: "Aspira" !important;
+	text-shadow: none !important;
 }
 
-body, input, select, textarea, button, .ui-btn {
-	font-family: "Ubuntu";
+img{
+	max-width: 100% !important;
 }
 
 .ui-page-theme-b{
@@ -27,15 +30,16 @@ body, input, select, textarea, button, .ui-btn {
 	margin: 20px 30px;
 	font-size: 1.3em;
 	color: rgb(253,217,140);
+	font-family: "Aspira Bold" !important;
 }
 
 .ui-page-theme-b .ui-btn:focus{
 	-webkit-box-shadow: none;
 	-moz-box-shadow: none;
 	box-shadow: none;
-	background-image: linear-gradient(left,rgb(216,162,83),rgb(253,217,140));
-	background-image: -webkit-linear-gradient(left,rgb(216,162,83),rgb(253,217,140));
-	background-image: -moz-linear-gradient(left,rgb(216,162,83),rgb(253,217,140));
+	background-image: linear-gradient(left,rgb(136,107,41),rgb(243,206,126));
+	background-image: -webkit-linear-gradient(left,rgb(136,107,41),rgb(243,206,126));
+	background-image: -moz-linear-gradient(left,rgb(136,107,41),rgb(243,206,126));
 	color: black;
 	border-color: transparent;
 }
@@ -44,20 +48,21 @@ body, input, select, textarea, button, .ui-btn {
 	-webkit-box-shadow: none;
 	-moz-box-shadow: none;
 	box-shadow: none;
-	background-image: linear-gradient(left,rgb(216,162,83),rgb(253,217,140));
-	background-image: -webkit-linear-gradient(left,rgb(216,162,83),rgb(253,217,140));
-	background-image: -moz-linear-gradient(left,rgb(216,162,83),rgb(253,217,140));
+	background-image: linear-gradient(left,rgb(136,107,41),rgb(243,206,126)) !important;
+	background-image: -webkit-linear-gradient(left,rgb(136,107,41),rgb(243,206,126)) !important;
+	background-image: -moz-linear-gradient(left,rgb(136,107,41),rgb(243,206,126)) !important;
 	color: black;
 	border-color: transparent;
 }
 
-.ui-page-theme-b .ui-btn:visited{
+.ui-page-theme-b .ui-btn.ui-btn-active{
 	-webkit-box-shadow: none;
 	-moz-box-shadow: none;
 	box-shadow: none;
-	background-image: linear-gradient(left,rgb(216,162,83),rgb(253,217,140));
-	background-image: -webkit-linear-gradient(left,rgb(216,162,83),rgb(253,217,140));
-	background-image: -moz-linear-gradient(left,rgb(216,162,83),rgb(253,217,140));
+	background-image: linear-gradient(left,rgb(136,107,41),rgb(243,206,126)) !important;
+	background-image: -webkit-linear-gradient(left,rgb(136,107,41),rgb(243,206,126)) !important;
+	background-image: -moz-linear-gradient(left,rgb(136,107,41),rgb(243,206,126)) !important;
+	color: black;
 	border-color: transparent;
 }
 
@@ -71,7 +76,110 @@ body, input, select, textarea, button, .ui-btn {
     left: 1em;
 }
 
-.ui-btn-right {
-    top: .5em;
-    right: .5em;
+.ui-btn-icon-notext.ui-btn-right {
+    top: 1em;
+    right: 1em;
+}
+
+.ui-listview > li {
+	color: white;
+	background-color: rgb(177,34,40);
+	padding: 30px;
+}
+
+.ui-input-text, .ui-input-search, .ui-select .ui-btn {
+	color: black !important;
+    border-radius: 50px;
+    background-color: white !important;
+    border: 2px solid #e3bd69 !important;
+ }
+
+ .ui-input-text input{
+ 	color: black !important; 
+ 	text-shadow: none;
+ 	text-align: center !important;
+ }
+
+ #entrar.ui-page-theme-b, #registro.ui-page-theme-b {
+ 	background-color: #2d2d2d !important;
+ }
+
+ #registro, #entrar{
+ 	color: #ddb762;
+ }
+
+ #home.ui-page-theme-b{
+ 	background-color: #fff !important;
+ }
+
+ #registro label, #entrar label{
+	font-style: italic;
+ }
+
+ .ui-checkbox, .ui-checkbox label{
+ 	background-color: transparent !important; 
+ 	border-color: transparent !important; 
+ 	text-align: justify !important; 
+ }
+
+ #boton-registro{
+ 	border-radius: 50px;
+ 	background-image: linear-gradient(left,rgb(136,107,41),rgb(243,206,126)) !important;
+	background-image: -webkit-linear-gradient(left,rgb(136,107,41),rgb(243,206,126)) !important;
+	background-image: -moz-linear-gradient(left,rgb(136,107,41),rgb(243,206,126)) !important;
+	border-color: transparent;
+	color: white;
+ }
+
+
+.sepCont {
+    height: 4.5em;
+    background: #2d2d2d;
+    margin: 20px -20px;
+}
+
+.sepCont .max{
+	margin: auto;
+	display: table;
+	width: 100%;
+}
+
+.contador {
+    position: relative;
+    z-index: 9;
+    text-align: center;
+    width: 100%;
+    display: block;
+    margin: 0 !important;
+    transform: none !important;
+}
+
+.contador .grupo {
+	background: #2d2d2d;
+	border-radius: 20px;
+    display: inline-block;
+    width: 2.8em;
+    text-align: center;
+    color: #fad688;
+    font-size: 2em;
+    text-align: center;
+}
+
+.contador .grupo span {
+    display: block;
+    font-size: 1.7em;
+    font-weight: 800;
+    letter-spacing: -0.1em;
+    background: -webkit-linear-gradient(#fcd88a, #6f5416);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.grueso label,.grueso span, .grueso button, .grueso a{
+	font-family: "Aspira Bold" !important;
+}
+
+.ui-icon-myicon:after {
+    background-image: url("../img/bell.png");
+    background-size: 18px 18px;
 }
