@@ -284,12 +284,26 @@ function dias_restantes() {
 
 $(document)
 	.on( "mobileinit", function () {
-		$.mobile.defaultPageTransition = 'flip';
+		$.mobile.defaultPageTransition = 'slideup';
 		$.mobile.loadingMessage = "Cargando...";
 		$.mobile.loadingMessageTextVisible = true;
 		$.mobile.loadingMessageTheme = "b";
 		$.mobile.pageLoadErrorMessage = "Disculpe, su solicitud no pudo ser procesada.";
 		$.mobile.pageLoadErrorMessageTheme = "b";
+
+		var wi = 0;
+		var inter = setInterval(function(){
+			$("#llenado").css("width",wi+"%");
+			if( wi < 100 ){
+				wi += 20;
+			}else{
+				wi = 0 ;
+				clearInterval(inter);
+				$("#loader").fadeOut(3000);
+			}
+		}, 700);
+
+
 	})
 	.on( "pagechange", function ( toPage , options ) {
 		switch( options.toPage[0].id )
