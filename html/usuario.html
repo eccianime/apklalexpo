@@ -1,22 +1,24 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<meta charset="utf-8">
-</head>
-<body>
-	<section data-role="page" id="admon" data-theme="b">
-		<div data-role="header">
-			<a href="#" data-icon="bars" data-iconpos="notext" data-shadow="false" data-iconshadow="false" ></a>
-			<h1><img src="../img/logow.png" width="100px"></h1>
-			<a href="#"><i class="fa fa-bell fa-2x" ></i></a>
-		</div>
-		<div data-role="content">
-			<a href="#" class="ui-btn ui-btn-a ui-icon-user ui-btn-icon-left">Perfil</a>
-			<a href="#" class="ui-btn ui-btn-a ui-icon-delete ui-btn-icon-left">Mapa</a>
-			<a href="#" class="ui-btn ui-btn-a ui-icon-delete ui-btn-icon-left">Escarapela</a>
-			<a href="#" class="ui-btn ui-btn-a ui-icon-delete ui-btn-icon-left">Publicar</a>
-			<a href="#" class="ui-btn ui-btn-a ui-icon-delete ui-btn-icon-left">Administración</a>
-		</div>
-	</section>
-</body>
-</html>
+<section data-role="page" id="usuario" data-theme="b">
+	<div data-role="header">
+		<a href="#menuizq" data-icon="bars" data-iconpos="notext" data-shadow="false" data-iconshadow="false" ></a>
+		<h1><img src="../img/logow.png" width="100px"></h1>
+		<a href="#" class="ui-btn ui-shadow ui-corner-all ui-icon-delete ui-btn-icon-notext ui-icon-myicon"></a>
+	</div>
+	<div data-role="content">
+		<a href="#" class="ui-btn ui-btn-a ui-btn-icon-left ui-nodisc-icon ui-icon-usuario">Perfil</a>
+		<a href="#" class="ui-btn ui-btn-a ui-btn-icon-left ui-nodisc-icon ui-icon-mapa">Mapa</a>
+		<a href="#" class="ui-btn ui-btn-a ui-btn-icon-left ui-nodisc-icon ui-icon-contactos">Escarapela</a>
+		<a href="#" class="ui-btn ui-btn-a ui-btn-icon-left ui-nodisc-icon ui-icon-lapiz">Publicar</a>
+		<a href="#" class="ui-btn ui-btn-a ui-btn-icon-left ui-nodisc-icon ui-icon-barras">Administración</a>
+	</div>
+	
+	<div data-role="panel" id="menuizq" data-position="left" data-display="reveal" data-theme="b">
+		<ul class="listview">
+			<li><a href="usuario.html"><img src="../img/icono-usuario.png"><br/>Perfil</a></li>
+			<li><a href="ticket.html"><img src="../img/icono-tickets.png"><br/>Tickets</a></li>
+			<li><a href="#"><img src="../img/icono-membresia.png"><br/>Membresía</a></li>
+			<li><a href="#"><img src="../img/icono-hotel.png"><br/>Hotel</a></li>
+			<li><a href="../index.html"><img src="../img/icono-salir.png"><br/>Cerrar Sesión</a></li>
+		</ul>		
+	</div>
+</section>
