@@ -6,7 +6,6 @@
 	<title>lalEXPO</title>
 	<link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css">
 	<link rel="stylesheet" href="css/app.css">
-	<link rel="stylesheet" href="css/font-awesome.min.css">
 	<link rel="apple-touch-icon" href="img/favicon.png">
 	<link rel="icon" type="image/png" href="img/favicon.png">
 	<script src="js/jquery.min.js"></script>
@@ -14,16 +13,52 @@
 	<script src="js/jquery.mobile-1.4.5.min.js"></script>
 </head>
 <body>
-	<section data-role="page" id="base" data-theme="b">
-		<div data-role="content" style="text-align:center">
-			<img src="img/logow.png">
-			<h1>Secciones de la App terminadas hasta ahora</h1>
-			<a href='html/home.html' data-role="button" class="menu">Home</a>
-			<a href='html/admon.html' data-role="button" class="menu">Administración</a>
-			<a href='html/registro.html' data-role="button" class="menu">Registro</a>
-			<a href='html/entrar.html' data-role="button" class="menu">Entrar</a>
-			<a href='html/usuario.html' data-role="button" class="menu">Usuario</a>
+	<section data-role="page" id="home" data-theme="b" style="text-align:center">
+		<!-- <div id="loader"><h1>Cargando App...<br><div id="barra"><div id="llenado"></div></div></h1></div> -->
+		<div data-role="content">
+			
+			<img src="img/logo.jpg">
+			<div class="separador home-secs"></div>
+			<div class="home-sec-1 home-secs">
+				<h1>Asista al Primer, Mayor y más importate Evento de la Industria de los Adultos de América Latina</h1>
+				<a href="html/registro.html" data-role="button" class="menu">Registro</a>
+				<a href="html/entrar.html" data-role="button" class="menu">Entrar</a>
+			</div>
+			<div class="separador home-secs"></div>
+			<div class="home-sec-2 home-secs">
+				<ul data-role="listview">
+					<li><img class="ui-li-icon" src="img/filled_star-16.png"> 1.500 Profesionales de la Industria</li>
+					<li><img class="ui-li-icon" src="img/filled_star-16.png"> Un nuevo mercado sin explotar</li>
+					<li><img class="ui-li-icon" src="img/filled_star-16.png"> Empresas listas para hacer negocios</li>
+					<li><img class="ui-li-icon" src="img/filled_star-16.png"> Cientos de Tratos Cerrados</li>
+					<li><img class="ui-li-icon" src="img/filled_star-16.png"> Una oportunidad para expandirse</li>
+					<li><img class="ui-li-icon" src="img/filled_star-16.png"> Importantes talleres y seminarios</li>
+					<li><img class="ui-li-icon" src="img/filled_star-16.png"> Reuniones de Negocios y Fiestas</li>
+				</ul>
+			</div>
+			<div class="home-secs separador"></div>
+		</div>
+		<div data-role="footer">
+			<small>Desarrollado por <a href="http://ingjprojas.zz.com.ve">Jean Paul Rojas</a> y <a href="http://lacasacreativa.co">lacasacreativa</a></small>
 		</div>
 	</section>
 </body>
 </html>
+			<!-- <div class="sepCont">
+				<div class="max">
+					<div class="contador grueso">
+						<div class="grupo">
+							<span id="dias">00</span>
+							<label>Días</label>
+						</div>
+						<div class="grupo" style="margin: 0 5px;">
+							<span id="horas">00</span>
+							<label>Horas</label>
+						</div>
+						<div class="grupo">
+							<span id="minutos">00</span>
+							<label>Minutos</label>
+						</div>
+					</div>
+				</div>
+			</div> -->
